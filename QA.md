@@ -1,11 +1,11 @@
 What are your risk areas? Identify and describe them.
-Some of the risk areas I found in this database were the consistency of values in some of the columns. For example amongst the product_sku column were items identified by letter and items identified by number. The time column also seemed unreliable because not all of the values could be converted to time.
+Some of the risk areas I found in this database were the inconsistency of values in some of the columns. For example, amongst the product_sku column were items identified by letter and items identified by number. The time column also seemed unreliable because not all of the values could be converted to time.
 
 
 QA Process:
 Describe your QA process and include the SQL queries used to execute it.
 
-Some of the QA processes I employed did not results from an SQL query. In assessing the risk of ALTER TABLE as away to trim useless columns or data, I decided against it as I did not want to compromise the original data. To find a way around this I made a CTE which will be shown amongst the other queries I tried to convert the data type of the time column
+Some of the QA processes I employed did not result from an SQL query. In assessing the risk of ALTER TABLE as a way to trim useless columns or data, I decided against it as I did not want to compromise the original data. To find a way around this I made a CTE which will be shown amongst the other queries I tried, in order to convert the data type of the time column.
 
 
 ##CREATE TEMPORARY TABLE Question_2 AS 
