@@ -5,7 +5,7 @@ Some of the risk areas I found in this database were the inconsistency of values
 QA Process:
 Describe your QA process and include the SQL queries used to execute it.
 
-Some of the QA processes I employed did not result from an SQL query. In assessing the risk of ALTER TABLE as a way to trim useless columns or data, I decided against it as I did not want to compromise the original data. To find a way around this I made a CTE which will be shown amongst the other queries I tried, in order to convert the data type of the time column.
+Some of the QA processes I employed did not result from an SQL query. In assessing the risk of ALTER TABLE as a way to trim useless columns or data, I decided against it as I did not want to compromise the original data. To find a way around this I made a CTE which will be shown amongst the other queries I tried, in order to convert the data type of the time column. It was also noticed upon importing the database into Postgresql that there was an inconsistency in how the columns were named which initially caused me to have to add "" around each. To speed up the data gathering process, I updated all of the table names to be lower case and had underscores in between each word. 
 
 
 ##CREATE TEMPORARY TABLE Question_2 AS 
