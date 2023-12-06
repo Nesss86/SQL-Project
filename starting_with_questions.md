@@ -84,10 +84,20 @@ Answer:The top selling product from each country appeared to be the ballpoint LE
 **Question 5: Can we summarize the impact of revenue generated from each city/country?**
 
 SQL Queries:
+##SELECT DISTINCT als.country, sr.product_sku, sr.name, CAST(SUM(als.total_transaction_revenue) 
+OVER (PARTITION BY als.country, sr.product_sku, sr.name) AS MONEY) AS total_revenue
+FROM all_sessions als
+JOIN sales_report sr ON als.product_sku = sr.product_sku
+WHERE als.country IS NOT NULL
+AND sr.product_sku IS NOT NULL
+AND total_transaction_revenue IS NOT NULL
+GROUP BY als.country, sr.product_sku, sr.name, als.total_transaction_revenue
+ORDER BY total_revenue DESC
 
 
 
-Answer:I tripped up on the wording and was unsure how to answer this correctly
+Answer:It was already known that the USA generated the most revenue out of all of the countries however a deeper dive into the data showed the range of products that generated this revenue and included the other countries and the products they purchased that generated their revenue. Among the most purchased was security cameras, thermostats and smoke detectors. Interestingly enough there appeared to be only two other countries on the list that generated revenue in this data set and they were Australia with a total revenue of $358,000,000 for Cam Indoor Security Camera - USA , and Canada with a total revenue of $67,990,000 for Men's Zip Hoodie.
+
 
 
 
