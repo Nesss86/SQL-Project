@@ -4,11 +4,11 @@
 The goal of this project was to be able to review the database to gain useful insights on various topics of interest and answer the questions provided, with the highest level of accuracy possible.
 
 ## Process
-###Step 1 - Was to get as intimately acquainted as possible with all of the data. I decided to start          	by reviewing the columns in each table to see if there was any similarity in names to help 	figure out what story this database was trying to tell me.  
-###Step 2 - Documented which columns were void of information and therefore would not be contributors for this project
-###Step 3 - Assessed any Quality Risks to the data if certain functions were performed (Like "ALTER TABLE")
-###Step 4 - Cleaned the data to try and achieve completeness
-###Step 5 - Joined the necessary information from the tables available to determine the answers to the questions
+### Step 1 - Was to get as intimately acquainted as possible with all of the data. I decided to start          	by reviewing the columns in each table to see if there was any similarity in names to help 	figure out what story this database was trying to tell me.  
+### Step 2 - Documented which columns were void of information and therefore would not be contributors for this project
+### Step 3 - Assessed any Quality Risks to the data if certain functions were performed (Like "ALTER TABLE")
+### Step 4 - Cleaned the data to try and achieve completeness
+### Step 5 - Joined the necessary information from the tables available to determine the answers to the questions
 
 ## Results
 
